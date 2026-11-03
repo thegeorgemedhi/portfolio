@@ -1,0 +1,95 @@
+/* RESPONSIVE */
+
+@media(max-width: 768px) {
+  .nav-links {
+    gap: 13px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
+
+  .nav-contact {
+    padding: 9px 12px;
+  }
+
+  .hero {
+    padding: 85px 0;
+  }
+
+  .hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 70px 0;
+  }
+}
+
+@media(max-width: 480px) {
+  nav {
+    min-height: 70px;
+  }
+
+  .logo {
+    font-size: 17px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links li:nth-child(1),
+  .nav-links li:nth-child(2) {
+    display: none;
+  }
+
+  .identity-item h3 {
+    font-size: 13px;
+  }
+
+  .identity-item p {
+    font-size: 10px;
+  }
+
+  .about-card {
+    padding: 25px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* SUBTLE ANIMATION */
+
+@media(prefers-reduced-motion: no-preference) {
+  .hero-content {
+    animation: fadeUp .8s ease both;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
